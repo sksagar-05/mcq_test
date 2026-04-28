@@ -1,6 +1,6 @@
 <?php
 	
-	require_once __DIR__ . '/../services/OpenAIClient.php';
+	require_once __DIR__ . '/../services/GeminiClient.php';
 	require_once __DIR__ . '/Quiz.php';
 	require_once __DIR__ . '/Question.php';
 
@@ -9,7 +9,7 @@
 	    private $client;
 
 	    public function __construct() {
-	        $this->client = new OpenAIClient("YOUR_API_KEY");
+	        $this->client = new GeminiClient("GEMINI_API_KEY");
 	    }
 
 	    public function getQuestions($topic) {
